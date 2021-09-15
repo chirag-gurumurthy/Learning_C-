@@ -1,5 +1,5 @@
-// for.cpp by Bill Weinman [bw.org]
-// updated 2020-06-24
+/* hello.cpp by Chirag
+updated 2021-09-16 */
 #include <cstdio>
 
 int main()
@@ -10,5 +10,10 @@ int main()
         printf("element %d is %d\n", i, array[i]);
     }
 
+    char s[] = "String";
+    for(char *p = s; *p; ++p)
+    {
+        printf("char is %c\n", *p);
+    }
     return 0;
 }

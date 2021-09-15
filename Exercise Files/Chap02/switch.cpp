@@ -1,5 +1,5 @@
-// switch.cpp by Bill Weinman [bw.org]
-// updated 2020-06-24
+/* hello.cpp by Chirag
+updated 2021-09-16 */
 #include <cstdio>
 
 int main() {
@@ -7,9 +7,9 @@ int main() {
     const int iTWO = 2;
     const int iTHREE = 3;
     const int iFOUR = 4;
-    
-    int x = 3;
-    
+
+    int x = 5;
+
     switch(x) {
         case iONE:
             puts("one");
@@ -24,7 +24,7 @@ int main() {
             puts("four");
             break;
         default:
-            puts("default");
+            puts("greater than 4");
             break;
     }
 }
