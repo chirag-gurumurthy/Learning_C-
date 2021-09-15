@@ -1,2 +1,2 @@
-# Learning_C-
+# Learning_C++
 C++ programming exercise codes
