@@ -1,9 +1,12 @@
-// working.cpp by Bill Weinman [bw.org]
-// updated 2020-06-24
+/* hello.cpp by Chirag
+updated 2021-09-15 */
 #include <cstdio>
 
 int main()
 {
-    puts("Hello, World!");
+    int i;
+    i = 7;
+    printf("value is %d\n", i);
+
     return 0;
 }

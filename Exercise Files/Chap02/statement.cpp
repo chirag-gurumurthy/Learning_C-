@@ -1,11 +1,11 @@
-// statement.cpp by Bill Weinman [bw.org]
-// updated 2020-07-06
+/* hello.cpp by Chirag
+updated 2021-09-15 */
 #include <cstdio>
 
 int main()
 {
     int x;
-    x = 42;
+    x = 42 * (12 + 14);
 
     printf("x is %d\n", x);
     printf("x is %d\n", x = 73);
