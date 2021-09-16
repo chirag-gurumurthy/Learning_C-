@@ -1,5 +1,5 @@
-// cpp-version.cpp by Bill Weinman [bw.org]
-// updated 2020-06-24
+/* cpp-version.cpp by Chirag
+updated 2021-09-16 */
 #include <cstdio>
 
 #if defined __clang__

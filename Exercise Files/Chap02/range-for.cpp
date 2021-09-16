@@ -1,5 +1,5 @@
-// range-for.cpp by Bill Weinman [bw.org]
-// updated 2020-06-24
+/* range-for.cpp by Chirag
+updated 2021-09-16 */
 #include <cstdio>
 
 int main()
@@ -8,6 +8,18 @@ int main()
 
     for(int i : array) {
         printf("i is %d\n", i);
+    }
+
+    char s[] = "String";
+
+    for(char c : s)
+    {
+        if (c==0)
+        {
+            break;
+        }
+
+        printf("c is %c\n", c);
     }
     return 0;
 }

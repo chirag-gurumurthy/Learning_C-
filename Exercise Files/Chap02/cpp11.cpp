@@ -1,6 +1,5 @@
-// cpp11.cpp by Bill Weinman <http://bw.org/>
-// test for modern C++ compiler
-// updated 2020-06-24
+/* cpp11.cpp by Chirag
+updated 2021-09-16 */
 #include <cstdio>
 
 int main()

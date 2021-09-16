@@ -1,16 +1,18 @@
-// func.cpp by Bill Weinman [bw.org]
-// updated 2020-06-24
+/* func.cpp by Chirag
+updated 2021-09-16 */
 #include <cstdio>
 
-void func()
+int func(int i, const char *s)
 {
-    puts("this is func()");
+    printf("this is func(%i, %s)\n", i, s);
+    return i*2;
 }
 
 int main()
 {
     puts("this is main()");
-    func();
+    int x = func(47, "string");
+    printf("x is %d\n", x);
     return 0;
 }
 

@@ -1,4 +1,4 @@
-/* hello.cpp by Chirag
+/* pointers.cpp by Chirag
 updated 2021-09-15 */
 #include <cstdio>
 

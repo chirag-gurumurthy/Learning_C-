@@ -1,5 +1,5 @@
-// loop.cpp by Bill Weinman [bw.org]
-// updated 2020-06-24
+/* loop-cout.cpp by Chirag
+updated 2021-09-16 */
 #include <cstdio>
 
 int main(int argc, char ** argv)

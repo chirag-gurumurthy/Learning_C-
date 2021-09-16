@@ -1,5 +1,4 @@
-// 02_solution.cpp by Bill Weinman [bw.org]
-// updated 2020-07-12
+/* updated 2021-09-16 */
 #include <cstdio>
 
 const char string[] = "This is a null-terminated string.";

@@ -1,4 +1,4 @@
-/* hello.cpp by Chirag
+/* while.cpp by Chirag
 updated 2021-09-16 */
 #include <cstdio>
 
