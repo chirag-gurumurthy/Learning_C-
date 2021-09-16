@@ -1,5 +1,5 @@
-// stdint.cpp by Bill Weinman <http://bw.org/>
-// updated 2020-06-24
+// stdint.cpp by Chirag
+// updated 2021-09-16
 #include <cstdio>
 #include <cstdint>
 
