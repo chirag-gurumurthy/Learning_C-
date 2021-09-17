@@ -1,5 +1,5 @@
-// bitfields.cpp by Bill Weinman <http://bw.org/>
-// updated 2020-06-24
+// bitfields.cpp by Chirag
+// updated 2021-09-17
 #include <cstdio>
 
 struct Prefs {
@@ -17,7 +17,7 @@ int main() {
     homer.hasInternet = true;
     homer.hasDinosaur = false;
     homer.numberOfChildren = 3;
-    
+
     printf("sizeof homer: %zd bits\n", sizeof(homer) * 8);
     printf("sizeof int: %zd bits\n", sizeof(int) * 8);
 
@@ -26,6 +26,6 @@ int main() {
     if(homer.hasInternet) printf("homer has net\n");
     if(homer.hasDinosaur) printf("homer has a dino\n");
     printf("homer has %d children\n", homer.numberOfChildren);
-    
+
     return 0;
 }

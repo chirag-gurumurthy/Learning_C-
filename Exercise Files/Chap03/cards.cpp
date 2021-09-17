@@ -1,6 +1,5 @@
-// cards.cpp by Bill Weinman <http://bw.org/>
-// updated 2020-06-24
-// version for C++ EssT 2020
+// cards.cpp by Chirag
+// updated 2021-09-17
 #include <cstdio>
 #include <cstdint>
 
@@ -77,6 +76,6 @@ int main() {
     for( card c : deck ) {
         print_card(c);
     }
-    
+
     return 0;
 }

@@ -1,5 +1,5 @@
-// union.cpp by Bill Weinman <http://bw.org/>
-// updated 2020-06-24
+// union.cpp by Chirag
+// updated 2021-09-17
 #include <cstdio>
 #include <cstdint>
 

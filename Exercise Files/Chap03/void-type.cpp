@@ -1,8 +1,8 @@
-// void-type.cpp by Bill Weinman <http://bw.org/>
-// updated 2020-06-24
+// void-type.cpp by Chirag
+// updated 2021-09-17
 #include <cstdio>
 
-void func ( void ) {
+void func ( ) {
     puts("this is void func ( void )");
 }
 

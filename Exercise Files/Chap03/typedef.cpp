@@ -1,5 +1,5 @@
-// typedef.cpp by Bill Weinman <http://bw.org/>
-// updated 2020-08-05
+// typedef.cpp by Chirag
+// updated 2021-09-17
 #include <cstdio>
 
 typedef unsigned char points_t;
@@ -14,6 +14,6 @@ int main()
 {
     score s = { 5, 1 };
     printf("score s had %d points and a rank of %d\n", s.p, s.r);
-    
+
     return 0;
 }

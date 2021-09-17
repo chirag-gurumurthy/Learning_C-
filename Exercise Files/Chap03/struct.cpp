@@ -1,5 +1,5 @@
-// struct.cpp by Bill Weinman <http://bw.org/>
-// updated 2020-06-24
+// struct.cpp by Chirag
+// updated 2021-09-17
 #include <cstdio>
 
 struct Employee {
@@ -10,9 +10,13 @@ struct Employee {
 
 int main() {
     Employee joe = { 42, "Joe", "Boss" };
-    
-    printf("%s is the %s and has id %d\n",
-           joe.name, joe.role, joe.id);
-    
+    Employee *j = &joe;     // another way of accessing the structure elements is by using pointers
+
+    /*printf("%s is the %s and has id %d\n",
+           joe.name, joe.role, joe.id);*/
+
+     printf("%s is the %s and has id %d\n",
+           j->name, j->role, j->id);
+
     return 0;
 }

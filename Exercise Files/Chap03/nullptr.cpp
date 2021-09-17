@@ -1,9 +1,9 @@
-// nullptr.cpp by Bill Weinman <http://bw.org/>
-// updated 2020-06-24
+// nullptr.cpp by Chirag
+// updated 2021-09-17
 #include <cstdio>
 
 #ifndef NULL
-#define NULL (0LL) /* common C++ definition */
+#define NULL ((0) /* common C++ definition */
 #endif
 
 void f( int i ) {
@@ -15,6 +15,6 @@ void f( const char * s ) {
 }
 
 int main() {
-    f(NULL);
+    f(nullptr);
     return 0;
 }
