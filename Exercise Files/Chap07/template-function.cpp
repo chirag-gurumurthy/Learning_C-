@@ -1,5 +1,5 @@
-// template-function.cpp by Bill Weinman <http://bw.org/>
-// updated 2020-07-21
+// template-function.cpp by Chirag
+// updated 2021-09-19
 #include <iostream>
 
 template <typename T>

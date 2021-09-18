@@ -1,4 +1,4 @@
-// rational.cpp by Chirag
+// nonMemberFuncForRational.cpp by Chirag
 // updated 2021-09-19
 #include <iostream>
 #include <string>
@@ -16,7 +16,7 @@ public:
     Rational reduce() const;            // reduce fraction
     std::string string() const;         // return a formatted STL string
     std::string raw_string() const;     // return a non-reduced STL string
-    Rational operator + ( const Rational & ) const;
+    // Rational operator + ( const Rational & ) const;
     Rational operator - ( const Rational & ) const;
     Rational operator * ( const Rational & ) const;
     Rational operator / ( const Rational & ) const;
@@ -60,10 +60,6 @@ std::string Rational::raw_string() const {
     return std::to_string(n) + "/" + std::to_string(d);
 }
 
-Rational Rational::operator + ( const Rational & rhs ) const {
-    return Rational((n * rhs.d) + (d * rhs.n), d * rhs.d);
-}
-
 Rational Rational::operator - ( const Rational & rhs ) const {
     return Rational((n * rhs.d) - (d * rhs.n), d * rhs.d);
 }
@@ -83,6 +79,10 @@ Rational::~Rational() {
 // useful for std::cout
 std::ostream & operator << (std::ostream & o, const Rational & r) {
     return o << r.raw_string();
+}
+
+Rational operator + ( const Rational & lhs, const Rational & rhs ) {
+    return Rational((lhs.numerator() * rhs.denominator()) + (lhs.denominator() * rhs.numerator()), lhs.denominator() * rhs.denominator());
 }
 
 int main() {
@@ -114,6 +114,8 @@ int main() {
     std::cout << a << " - " << b << " = " << a - b << std::endl;
     std::cout << a << " * " << b << " = " << a * b << std::endl;
     std::cout << a << " / " << b << " = " << a / b << std::endl;
+
+    std::cout << 14 << " + " << a << " = " << 14 + a << std::endl;
 
     return 0;
 }

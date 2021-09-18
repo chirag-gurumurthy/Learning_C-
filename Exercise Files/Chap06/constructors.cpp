@@ -1,5 +1,5 @@
-// constructors.cpp by Bill Weinman <http://bw.org/>
-// updated 2020-08-30
+// constructors.cpp by Chirag
+// updated 2021-09-18
 #include <cstdio>
 #include <string>
 
@@ -62,16 +62,16 @@ void Animal::print () const {
 int main() {
     Animal a;
     a.print();
-    
+
     const Animal b("goat", "bob", "baah");
     b.print();
-    
+
     const Animal c = b;
     c.print();
-    
+
     a = c;
     a.print();
-    
+
     puts("end of main");
     return 0;
 }

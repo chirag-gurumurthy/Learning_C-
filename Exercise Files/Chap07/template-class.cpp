@@ -1,5 +1,5 @@
-// template-class.cpp by Bill Weinman <http://bw.org/>
-// updated 2020-08-31
+// template-class.cpp by Chirag
+// updated 2021-09-19
 #include <iostream>
 #include <string>
 #include <exception>
@@ -57,33 +57,33 @@ int main() {
     try {
 
         Stack<int> si(5);
-        
+
         std::cout << "si size: " << si.size() << std::endl;
         std::cout << "si top: " << si.top() << std::endl;
-        
+
         for ( int i : { 1, 2, 3, 4, 5 } ) {
             si.push(i);
         }
-        
+
         std::cout << "si top after pushes: " << si.top() << std::endl;
         std::cout << "si is " << ( si.isFull() ? "" : "not " ) << "full" << std::endl;
-        
+
         while(!si.isEmpty()) {
             std::cout << "popped " << si.pop() << std::endl;
         }
 
         Stack<std::string> ss(5);
-        
+
         std::cout << "ss size: " << ss.size() << std::endl;
         std::cout << "ss top: " << ss.top() << std::endl;
-        
+
         for ( const char * s : { "one", "two", "three", "four", "five" } ) {
             ss.push(s);
         }
-        
+
         std::cout << "ss top after pushes: " << ss.top() << std::endl;
         std::cout << "ss is " << ( ss.isFull() ? "" : "not " ) << "full" << std::endl;
-        
+
         while(!ss.isEmpty()) {
             std::cout << "popped " << ss.pop() << std::endl;
         }
@@ -91,6 +91,6 @@ int main() {
     } catch (BWEx & e) {
         std::cout << "Stack error: " << e.what() << std::endl;
     }
-    
+
     return 0;
 }
