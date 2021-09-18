@@ -1,5 +1,5 @@
-// new-delete.cpp by Bill Weinman <http://bw.org/>
-// updated 2020-06-24
+// new-delete.cpp by Chirag
+// updated 2021-09-18
 #include <cstdio>
 #include <new>
 
@@ -7,7 +7,7 @@ const long int count = 1024;
 
 int main() {
     printf("allocate space for %lu long int at *ip with new\n", count);
-    
+
     // allocate array
     long int * ip;
     try {
@@ -16,15 +16,15 @@ int main() {
         fprintf(stderr, "Cannot allocate memory (%s)\n", ba.what());
         return 1;
     }
-    
+
     // initialize array
     for( long int i = 0; i < count; i++ ) {
         ip[i] = i;
     }
-    
+
     // deallocate array
     delete [] ip;
     puts("space at *ip deleted");
-    
+
     return 0;
 }

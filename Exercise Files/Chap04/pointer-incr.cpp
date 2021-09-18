@@ -1,5 +1,5 @@
-// pointer-incr.cpp by Bill Weinman <http://bw.org/>
-// updated 2020-06-24
+// pointer-incr.cpp by Chirag
+// updated 2021-09-18
 #include <cstdio>
 #include <cstdint>
 
@@ -11,9 +11,9 @@ int main()
 {
     uint8_t arr[5] = { 1, 2, 3, 4, 5 };
     uint8_t *p = arr;
-    printp(p++);
-    printp(p++);
-    printp(p++);
+    printp(++p);
+    printp(++p);
+    printp(++p);
 
     return 0;
 }

@@ -1,5 +1,5 @@
-// typeid.cpp by Bill Weinman <http://bw.org/>
-// updated 2020-06-24
+// typeid.cpp by Chirag
+// updated 2021-09-18
 #include <cstdio>
 #include <typeinfo>
 
@@ -12,10 +12,14 @@ B b1;
 B b2;
 
 int main() {
-    if(typeid(a1) == typeid(A)) {
+    if(typeid(a1) == typeid(B)) {
         puts("same");
     } else {
         puts("different");
     }
+
+    printf("type is %s\n", typeid(A).name());
+    printf("type is %s\n", typeid(B).name());
+
     return 0;
 }

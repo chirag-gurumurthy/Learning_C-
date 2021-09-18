@@ -1,5 +1,5 @@
-// bprint.cpp by Bill Weinman <http://bw.org/>
-// updated 2020-08-07
+// bprint.cpp by Chirag
+// updated 2021-09-18
 #include <cstdio>
 #include <cstdint>
 
@@ -18,11 +18,11 @@ int main()
     uint8_t a = 5;
     uint8_t b = 10;
     uint8_t c = a | b;
-    
+
     printf("x is %s\n", u8_to_bstr(a));
     printf("y is %s\n", u8_to_bstr(b));
     printf("result is %s\n", u8_to_bstr(c));
-    
+
     return 0;
 }
 
