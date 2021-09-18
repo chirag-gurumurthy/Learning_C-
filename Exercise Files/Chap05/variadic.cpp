@@ -1,5 +1,5 @@
-// variadic.c by Bill Weinman <http://bw.org/>
-// updated 2020-06-24
+// variadic.c by Chirag
+// updated 2021-09-18
 #include <cstdio>
 #include <cstdarg>
 
@@ -10,7 +10,7 @@ double average(const int count, ...)
     va_list ap;
     int i;
     double total = 0.0;
-    
+
     va_start(ap, count);
     for(i = 0; i < count; ++i) {
         total += va_arg(ap, double);

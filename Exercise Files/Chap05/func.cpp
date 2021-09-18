@@ -1,11 +1,9 @@
-// func.cpp by Bill Weinman <http://bw.org/>
-// updated 2020-06-24
+// func.cpp by Chirag
+// updated 2021-09-18
 #include <cstdio>
+#include "func.h"       //by declaring function name in the header, we can avoid writing the function 'func()' before the main() function
 
-void func()
-{
-    puts("this is func()");
-}
+
 
 int main()
 {
@@ -14,3 +12,8 @@ int main()
     return 0;
 }
 
+
+void func()
+{
+    puts("this is func()");
+}

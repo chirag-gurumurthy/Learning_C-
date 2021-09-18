@@ -1,10 +1,16 @@
-// recursive-factorial.cpp by Bill Weinman <http://bw.org/>
-// updated 2020-06-24
+// recursive-factorial.cpp by Chirag
+// updated 2021-09-18
 #include <cstdio>
 
 unsigned long int factorial( unsigned long int n ) {
-    if( n < 2 ) return 1;
-    return n * factorial( n - 1 );
+    if( n < 2 )
+    {
+        return 1;
+    }
+    else
+    {
+        return n * factorial( n - 1 );
+    }
 }
 
 int main() {

@@ -1,5 +1,5 @@
-// func-overload.cpp by Bill Weinman <http://bw.org/>
-// updated 2020-06-24
+// func-overload.cpp by Chirag
+// updated 2021-09-18
 #include <cstdio>
 
 constexpr double d_pi = 3.141592653589793;

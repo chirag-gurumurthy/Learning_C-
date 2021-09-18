@@ -1,6 +1,6 @@
-// jump.cpp by Bill Weinman <http://bw.org/>
+// jump.cpp by by Chirag
 // a simple jump table
-// updated 2020-08-27
+// updated 2021-09-18
 #include <cstdio>
 
 void fa() { puts("this is fa()"); }
@@ -22,11 +22,11 @@ const char * prompt() {
     puts("Q. Quit.");
     printf(">> ");
     fflush(stdout);                 // flush after prompt
-    
+
     const int buffsz = 16;          // constant for buffer size
     static char response[buffsz];   // static storage for response buffer
     fgets(response, buffsz, stdin); // get response from console
-    
+
     return response;
 }
 
@@ -34,10 +34,10 @@ const char * prompt() {
 int jump( const char * rs ) {
     char code = rs[0];
     if(code == 'q' || code == 'Q') return 0;
-    
+
     // get the length of the funcs array
     size_t func_length = sizeof(funcs) / sizeof(funcs[0]);
-    
+
     size_t i = (size_t) code - '0';   // convert ASCII numeral to int
     if( i < 1 || i > func_length ) {
         puts("invalid choice");
@@ -46,7 +46,7 @@ int jump( const char * rs ) {
         funcs[i - 1]();         // array is zero-based
         return 1;
     }
-    
+
 }
 
 int main() {
