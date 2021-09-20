@@ -1,5 +1,5 @@
-// iostream-file.cpp by Bill Weinman <http://bw.org/>
-// updated 2002-06-24
+// iostream-file.cpp by Chirag
+// updated 2021-09-19
 #include <iostream>
 #include <fstream>
 
@@ -7,7 +7,7 @@ int main() {
     static int lineno = 0;
     static const char * filename = "test.txt";
     static const char * textstring = "This is the test file";
-    
+
     // write a file
     std::cout << "write the file:" << std::endl;
     std::ofstream ofile(filename);
@@ -15,7 +15,7 @@ int main() {
     ofile << ++lineno << " " << textstring << std::endl;
     ofile << ++lineno << " " << textstring << std::endl;
     ofile.close();
-    
+
     // read a file
     static char buf[128];
     std::cout << "read the file:" << std::endl;
@@ -25,7 +25,7 @@ int main() {
         std::cout << buf << std::endl;
     }
     infile.close();
-    
+
     // delete file
     std::cout << "delete file." << std::endl;
     remove(filename);

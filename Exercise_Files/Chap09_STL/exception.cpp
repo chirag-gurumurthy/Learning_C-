@@ -1,5 +1,5 @@
-// exception.cpp by Bill Weinman <http://bw.org/>
-// updated 2002-09-03
+// exception.cpp by Chirag
+// updated 2021-09-19
 #include <iostream>
 #include <exception>
 
@@ -15,11 +15,19 @@ namespace BW {
 
 void broken() {
     std::cout << "this is a broken function" << std::endl;
-    throw std::exception();
+    throw BW::E("ouch!");
 }
 
 int main() {
     std::cout << "let's have an emergency!" << std::endl;
-    broken();
+    try
+    {
+        broken();
+    }
+    catch (BW::E & e)
+    {
+        std::cout << e.what() << std::endl;
+    }
+
     return 0;
 }

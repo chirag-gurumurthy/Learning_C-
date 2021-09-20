@@ -8,7 +8,7 @@
 constexpr size_t maxstring = 1024;  // size of line buffer
 constexpr size_t name_size = 32;    // size of name string
 constexpr size_t desc_size = 128;   // size of description string
-constexpr const char * filename = "/Users/billw/Desktop/ExerciseFiles/Chap08/items.txt";
+constexpr const char * filename = "E:/Learning_C_plus_plus/Exercise_Files/Chap08/items.txt";
 constexpr size_t max_split = 15;
 constexpr char tab_char = '\t';
 
@@ -59,7 +59,7 @@ int main()
             buf[len - 1] = 0;
             --len;
         }
-        
+
         size_t * split3 = str_seps(buf, len);
         if(split3[0] < 2) break;
         buf[split3[1]] = buf[split3[2]] = 0;   // change separators to terminators
